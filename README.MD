@@ -1,31 +1,17 @@
-## Programming Challenge
+## 1. Problem Statement
 
-Design a system that uses a special remote control to send commands to different devices. The key idea is to create a way for the remote control to control multiple devices without knowing the specifics of each device. Specifically:
+This java program is built as a conceptual device to provide a centralized support for various home devices by manipulating their properties and functions through remote means. This remote, while only having a few basic functions, can still invoke distinct functions from each appliance through the implementation of a Command Design Pattern.
 
-Create a remote control that can send commands like "Power On" and "Power Off."
+The basic remote functions are the following:
+1. Switch on
+2. Switch off
+3. Increment
+4. Decrement
+5. Set a Numerical Value
 
-Implement separate commands for "Switch On" and "Switch Off."
-
-Develop a system where devices (e.g., TV, stereo, lights) can respond to these commands. Each device should have its unique behavior for turning on and off.
-
-Ensure that the remote control can send these commands to any device without knowing how each device works internally.
-
-Your challenge is to apply a design pattern that allows this remote control to be flexible and extensible, enabling it to control various devices effortlessly. This should be achieved without the remote control having to understand the specific details of how each device operates.
+All of these functions correspond to a distinct functionality in each device.
 
 ## UML Diagram
-![alt text](https://github.com/JerryEsperanza/SoftEng1_4BSCS2/blob/master/commandPattern/commandPatternImage.png?raw=true)
+![UML Class Diagram](https://github.com/fausturnacht/CommandPattern/blob/f20a30cb842b8b88509d164df31020746632fec1/Laboratory%20Assignment%202%20-%20Command%20Pattern%20(UML%20Class%20Diagram).png?raw=true)
 
-## Components
-
-ViewerApp (Client): This represents an application used by viewers to control the TV. It interacts with the RemoteControl to send commands.
-
-RemoteControl (Invoker): The RemoteControl acts as an invoker, receiving commands from the ViewerApp and executing them. It has a clickButton() method to invoke commands.
-
-Command (Interface): An interface defining the execute() method, which concrete command objects must implement. It ensures that all concrete commands have an execute() method.
-
-PowerOn (Concrete Command): A concrete command object representing the "power on" operation for the TV. It encapsulates the switchOn() method of the Tv object.
-
-PowerOff (Concrete Command): A concrete command object representing the "power off" operation for the TV. It encapsulates the switchOff() method of the Tv object.
-
-Tv (Receiver): The TV object represents the device being controlled. It has switchOn() and switchOff() methods to control its power state.
 
