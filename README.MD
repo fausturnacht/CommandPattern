@@ -1,6 +1,6 @@
 ## 1. Problem Statement
 
-This java program is built as a conceptual device to provide a centralized support for various home devices by manipulating their properties and functions through remote means. This remote, while only having a few basic functions, can still invoke distinct functions from each appliance through the implementation of a Command Design Pattern.
+This java program is built as a conceptual device to provide a centralized support for various home devices by manipulating their properties and functions through remote means. This remote, while only having a few basic functions, can still invoke distinct functions from each appliance through the implementation of a Command Design Pattern. This allows developers and programmers alike to seamlessly integrate new devices into the system without extensive modification of the source-code. Consequently, this improves this system's lifespan as the cost of maintaining it is preferrable compared to other means.
 
 The basic remote functions are the following:
 1. Switch on
