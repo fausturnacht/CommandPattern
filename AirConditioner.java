@@ -23,6 +23,6 @@ public class AirConditioner implements PowerSwitchable, Incrementable, Decrement
 
     //Continuous Controls
     public String setContValue(int value) {
-        return "AC's strength is set to "+value + ".";
+        return "AC's fan strength is set to "+value + ".";
     }
 }
